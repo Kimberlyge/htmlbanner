@@ -1,0 +1,47 @@
+.text {
+  font-family: $font-family-claim;
+  color: $claim-color;
+
+  &__part {
+    &--emphasis {
+      color: $claim-color;
+    }
+  }
+}
+
+.model {
+  &__image {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: auto;
+  }
+}
+
+.fruits-container {
+  &__fruit {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    &--orange {
+      width: 100px;
+      height: auto;
+    }
+
+    &--lemon {
+      width: 100px;
+      height: auto;
+    }
+
+    &--pill-1 {
+      width: 100px;
+      height: auto;
+    }
+
+    &--pill-2 {
+      width: 100px;
+      height: auto;
+    }
+  }
+}
