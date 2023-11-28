@@ -2,11 +2,13 @@
   font-family: $font-family-claim;
   color: $claim-color;
   --delay: 40ms;
+  --duration: 5s;
+  // animation: fadeOut var(--duration) ease infinite;
 
   &__part {
     opacity: 0;
-    animation: fade 500ms ease;
-    animation-fill-mode: forwards;
+    animation: fade var(--duration) ease infinite;
+    animation-fill-mode: both;
 
     @for $i from 1 through 50 {
       &:nth-child(#{$i}) {
@@ -69,13 +71,36 @@
 }
 
 @keyframes fade {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-20%);
   }
 
-  to {
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 100%;
+//   }
+
+//   90% {
+//     opacity: 100%;
+//   }
+
+//   99% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 100%;
+//   } 
+// }
