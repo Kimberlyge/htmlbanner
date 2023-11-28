@@ -25,7 +25,7 @@
 
     strong {
       display: inline-block;
-      animation: pulse 2s ease infinite;
+      animation: pulse var(--duration) ease infinite;
       animation-fill-mode: both;
     }
   }
@@ -90,15 +90,31 @@
     transform: scale(1);
   }
 
-  80% {
+  20% {
     transform: scale(1);
   }
 
-  90% {
-    transform: scale(1.5);
+  25% {
+    transform: scale(1.1);
+  }
+  
+  30% {
+    transform: scale(1);
+  }
+  
+  80% {
+    transform: scale(1);
+  }
+  
+  85% {
+    transform: scale(1.1);
   }
 
   90% {
+    transform: scale(1);
+  }
+
+  100% {
     transform: scale(1);
   }
 }
