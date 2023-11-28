@@ -168,7 +168,7 @@ body {
 	height: 90px;
 	
 	.banner-button {
-    right: 15px;
+    right: 25px;
     bottom: 25px;
     font-size: 14px;
     padding: 6px 20px;
@@ -356,42 +356,42 @@ body {
   // animation icons
   .model {
     &__image {
-      width: 73%;
-      right: -45px;
-      top: 85px;
+      width: 93%;
+      right: -55px;
+      top: 120px;
     }
   }
 
   .fruits-container {
     &__fruit {
       &--orange {
-        width: 55px;
-        top: 230px;
-        left: 75px;
+        width: 60px;
+        top: 310px;
+        left: 38px;
       }
   
       &--lemon {
-        width: 45px;
-        left: 105px;
-        top: 140px;
+        width: 48px;
+        left: 78px;
+        top: 150px;
       }
   
       &--pill-1 {
-        width: 30px;
-        right: -1px;
-        bottom: 170px;
+        width: 32px;
+        right: 5px;
+        top: 120px;
       }
 
       &--pill-2--2 {
         width: 95px;
-        right: -55px;
-        top: 75px;
+        right: -80px;
+        top: 235px;
       }
   
       &--pill-2 {
-        width: 45px;
-        left: 150px;
-        top: 230px;
+        width: 42px;
+        left: 88px;
+        top: 305px;
       }
     }
   }
@@ -399,19 +399,56 @@ body {
 
 .banner-728-90 {
   .text {
-    right: 135px;
+    right: 138px;
     bottom: 11px;
   }
 
   .text__part {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 16px;
+  }
+
+  // animation icons
+  .model {
+    &__image {
+      width: 17%;
+      right: 50%;
+      top: -2px;
+    }
+  }
+
+  .fruits-container {
+    &__fruit {
+      &--orange {
+        width: 45px;
+        bottom: -12%;
+        left: 26%;
+      }
+  
+      &--lemon {
+        width: 35px;
+        left: 32%;
+        top: 7px;
+      }
+  
+      &--pill-1 {
+        width: 22px;
+        left: 47%;
+        top: 20px;
+      }
+  
+      &--pill-2 {
+        width: 25px;
+        left: 32%;
+        bottom: 2%;
+      }
+    }
   }
 }
 
 .banner-970-90 {
   .text {
-    right: 155px;
+    right: 165px;
     bottom: 22px;
   }
 
@@ -419,16 +456,90 @@ body {
     font-size: 19px;
     line-height: 16px;
   }
+
+  // animation icons
+  .model {
+    &__image {
+      width: 13%;
+      right: 57%;
+      top: -2px;
+    }
+  }
+
+  .fruits-container {
+    &__fruit {
+      &--orange {
+        width: 43px;
+        bottom: 2%;
+        left: 24%;
+      }
+  
+      &--lemon {
+        width: 36px;
+        left: 287px;
+        top: 7px;
+      }
+  
+      &--pill-1 {
+        width: 20px;
+        left: 40.5%;
+        top: 20px;
+      }
+  
+      &--pill-2 {
+        width: 25px;
+        left: 29%;
+        bottom: 2%;
+      }
+    }
+  }
 }
 
 .banner-1080-1080 {
   .text {
     left: 50px;
-    bottom: 350px;
+    bottom: 355px;
   }
 
   .text__part {
-    font-size: 67px;
-    line-height: 78px;
+    font-size: 63px;
+    line-height: 75px;
+  }
+
+  // animation icons
+  .model {
+    &__image {
+      width: 60%;
+      right: -135px;
+      top: 28%;
+    }
+  }
+
+  .fruits-container {
+    &__fruit {
+      &--orange {
+        width: 14%;
+        bottom: 7%;
+        left: 46%;
+      }
+  
+      &--lemon {
+        width: 12%;
+        left: 54%;
+        top: 35%;
+      }
+  
+      &--pill-1 {
+        width: 7%;
+        right: -3px;
+        top: 29%;
+      }
+  
+      &--pill-2 {
+        width: 11%;
+        left: 55%;
+        bottom: 21%;
+      }
+    }
   }
 }
