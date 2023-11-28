@@ -1,11 +1,13 @@
 .text {
   font-family: $font-family-claim;
   color: $claim-color;
-  --delay: 40ms;
+  --delay: 80ms;
   --duration: 5s;
-  // animation: fadeOut var(--duration) ease infinite;
+  animation: fadeOut var(--duration) ease infinite;
+  animation-fill-mode: both;
 
   &__part {
+    display: inline-block;
     opacity: 0;
     animation: fade var(--duration) ease infinite;
     animation-fill-mode: both;
@@ -86,20 +88,16 @@
   }
 }
 
-// @keyframes fadeOut {
-//   0% {
-//     opacity: 100%;
-//   }
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
 
-//   90% {
-//     opacity: 100%;
-//   }
+  90% {
+    opacity: 100%;
+  }
 
-//   99% {
-//     opacity: 0;
-//   }
-
-//   100% {
-//     opacity: 100%;
-//   } 
-// }
+  100% {
+    opacity: 0;
+  }
+}
