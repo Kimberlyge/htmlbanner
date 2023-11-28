@@ -3,7 +3,7 @@
   color: $claim-color;
   --delay: 80ms;
   --duration: 5s;
-  animation: fadeOut var(--duration) ease infinite;
+  // animation: fadeOut var(--duration) ease infinite;
   animation-fill-mode: both;
 
   &__part {
@@ -21,6 +21,12 @@
     &--emphasis {
       font-weight: bold;
       color: $claim-color-emp;
+    }
+
+    strong {
+      display: inline-block;
+      animation: pulse 2s ease infinite;
+      animation-fill-mode: both;
     }
   }
 }
@@ -71,6 +77,24 @@
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  90% {
+    transform: scale(1.5);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -82,22 +106,27 @@
     transform: translateY(0);
   }
   
-  100% {
+  95% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 100%;
-  }
-
-  90% {
-    opacity: 100%;
   }
 
   100% {
     opacity: 0;
+    transform: translateY(-20);
   }
 }
+
+// @keyframes fadeOut {
+//   0% {
+//     opacity: 100%;
+//   }
+
+//   90% {
+//     opacity: 100%;
+//   }
+
+//   100% {
+//     opacity: 0;
+//   }
+// }
