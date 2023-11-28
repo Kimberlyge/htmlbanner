@@ -1,7 +1,6 @@
 html {
   font-size: $font-size;
   font-family: $font-family;
-  // background: $background-color;
   color: $font-color;
   line-height: 1.4;
 }
@@ -10,7 +9,7 @@ body {
   margin: auto;
 }
 
-
+// beginnt, oben alles löschen
 .banner {
 	position: relative;
 	background-color: #ffc800;
@@ -53,15 +52,30 @@ body {
   }
 }
 
+// .image-container {
+//   position: absolute;
+//   top: 0;
+// }
+
+// .animation-container {
+//   height: 100%;
+//   width: 100%;
+// }
+
 .image-container {
+  // max-width: 100%;
+  // overflow: hidden;
+  // position: absolute;
+  // top: 0;
+}
+
+.animation-container {
+  display: flex;
+  width: 100%; /* Ensure the container takes full width */
   position: absolute;
   top: 0;
 }
 
-.animation-container {
-  height: 100%;
-  width: 100%;
-}
 
 .animation-container img {
   width: 100%;
@@ -73,8 +87,25 @@ body {
   width: 300px;
 	height: 250px;
 
+  .banner-logos {
+    padding-left: 12px;
+  }
+
   .banner-logos img {
-    height: 20px;
+    height: 26px;
+    margin-right: 7px;
+    
+    &:nth-of-type(4) {
+      height: 15px;
+    }
+
+    &:nth-of-type(5) {
+      height: 15px;
+    }
+
+    &:nth-of-type(6) {
+      height: 15px;
+    }
   }
 
   .banner-button {
@@ -82,6 +113,7 @@ body {
 		bottom: 8px;
 		font-size: 12px;
     padding: 6px 20px;
+    
 	}
 }
 
@@ -90,7 +122,19 @@ body {
 	height: 480px;
 
   .banner-logos img {
-    height: 35px;
+    height: 38px;
+
+    &:nth-of-type(4) {
+      height: 18px;
+    }
+
+    &:nth-of-type(5) {
+      height: 26px;
+    }
+
+    &:nth-of-type(6) {
+      height: 25px;
+    }
   }
 
   .banner-button {
@@ -114,18 +158,22 @@ body {
 
   .banner-logos {
     padding-left: 15px;
-    padding-top: 15px;
+    padding-top: 25px;
   
     img {
-      height: 55px;
+      height: 45px;
+      margin-bottom: 18px;
   
       &:nth-of-type(4) {
-        height: 21px;
+        height: 22px;
       }
   
-      &:nth-of-type(5),
+      &:nth-of-type(5) {
+        height: 25px;
+      }
+  
       &:nth-of-type(6) {
-        height: 30px;
+        height: 25px;
       }
     }
   }
@@ -148,16 +196,19 @@ body {
     padding-top: 15px;
   
     img {
-      height: 32px;
-      margin-bottom: 8px;
+      height: 25px;
+      margin-bottom: 15px;
   
       &:nth-of-type(4) {
         height: 15px;
       }
   
-      &:nth-of-type(5),
+      &:nth-of-type(5) {
+        height: 19px;
+      }
+  
       &:nth-of-type(6) {
-        height: 22px;
+        height: 19px;
       }
     }
   }
@@ -181,15 +232,18 @@ body {
   
     img {
       height: 32px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
   
       &:nth-of-type(4) {
         height: 15px;
       }
   
-      &:nth-of-type(5),
+      &:nth-of-type(5) {
+        height: 19px;
+      }
+  
       &:nth-of-type(6) {
-        height: 22px;
+        height: 19px;
       }
     }
   }
@@ -212,15 +266,19 @@ body {
     padding-top: 55px;
   
     img {
-      height: 120px;
+      height: 100px;
+      margin-right: 25px;
   
       &:nth-of-type(4) {
-        height: 50px;
+        height: 45px;
       }
   
-      &:nth-of-type(5),
+      &:nth-of-type(5) {
+        height: 60px;
+      }
+  
       &:nth-of-type(6) {
-        height: 90px;
+        height: 60px;
       }
     }
   }
