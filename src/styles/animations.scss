@@ -36,7 +36,7 @@
   &__fruit {
     position: absolute;
     right: 0;
-    animation: bounce 1s infinite ease-in-out alternate;
+    animation: bounce 1.5s infinite ease-in-out alternate;
 
     &--orange {
       width: 100px;
@@ -51,21 +51,29 @@
     &--pill-1 {
       width: 100px;
       height: auto;
+      animation-delay: 0.2s;
     }
 
     &--pill-2 {
       width: 100px;
       height: auto;
+      animation-delay: 0.2s;
+    }
+
+    &--pill-2-2 {
+      width: 100px;
+      height: auto;
+      animation-delay: 0.2s;
     }
   }
 }
 
 @keyframes bounce {
   from {
-    transform: translateY(-20%);
+    transform: translateY(-19%);
   }
   to {
-    transform: translateY(20%);
+    transform: translateY(19%);
   }
 }
 
