@@ -78,8 +78,8 @@ body {
   }
 
   .banner-button {
-		left: 8px;
-		bottom: 8px;
+		left: 19px;
+		bottom: 13px;
 		font-size: 12px;
     padding: 6px 20px;
 	}
@@ -223,5 +223,88 @@ body {
         height: 90px;
       }
     }
+  }
+}
+
+
+.text {
+  position: absolute;
+}
+
+.text__part {
+  &--bold {
+    font-weight: 600;
+  }
+}
+
+.banner-300-250 {
+  .text {
+    bottom: 55px;
+    margin-left: 20px;
+  }
+
+  .text__part {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.banner-320-480 {
+  .text {
+    bottom: 35px;
+    margin-left: 25px;
+  }
+
+  .text__part {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.banner-300-600 {
+  .text {
+    bottom: 55px;
+    margin-left: 25px;
+  }
+
+  .text__part {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.banner-728-90 {
+  .text {
+    right: 135px;
+    bottom: 11px;
+  }
+
+  .text__part {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
+.banner-970-90 {
+  .text {
+    right: 155px;
+    bottom: 22px;
+  }
+
+  .text__part {
+    font-size: 19px;
+    line-height: 16px;
+  }
+}
+
+.banner-1080-1080 {
+  .text {
+    left: 50px;
+    bottom: 350px;
+  }
+
+  .text__part {
+    font-size: 67px;
+    line-height: 78px;
   }
 }
