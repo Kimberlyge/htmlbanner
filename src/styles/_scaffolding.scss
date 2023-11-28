@@ -238,6 +238,8 @@ body {
 }
 
 .banner-300-250 {
+
+  // animation text
   .text {
     bottom: 55px;
     margin-left: 20px;
@@ -246,6 +248,42 @@ body {
   .text__part {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  // animation icons
+  .model {
+    &__image {
+      right: -19px;
+      top: 75px;
+    }
+  }
+
+  .fruits-container {
+    &__fruit {
+      &--orange {
+        width: 45px;
+        bottom: 22px;
+        right: 118px;
+      }
+  
+      &--lemon {
+        width: 38px;
+        right: 85px;
+        top: 70px;
+      }
+  
+      &--pill-1 {
+        width: 28px;
+        right: -2px;
+        top: 80px;
+      }
+  
+      &--pill-2 {
+        width: 35px;
+        right: 85px;
+        top: 178px;
+      }
+    }
   }
 }
 
@@ -257,7 +295,50 @@ body {
 
   .text__part {
     font-size: 22px;
-    line-height: 24px;
+    line-height: 26px;
+  }
+
+  // animation icons
+  .model {
+    &__image {
+      width: 73%;
+      right: -45px;
+      top: 85px;
+    }
+  }
+
+  .fruits-container {
+    &__fruit {
+      &--orange {
+        width: 55px;
+        top: 230px;
+        left: 75px;
+      }
+  
+      &--lemon {
+        width: 45px;
+        left: 105px;
+        top: 140px;
+      }
+  
+      &--pill-1 {
+        width: 30px;
+        right: -1px;
+        bottom: 170px;
+      }
+
+      &--pill-2--2 {
+        width: 95px;
+        right: -55px;
+        top: 75px;
+      }
+  
+      &--pill-2 {
+        width: 45px;
+        left: 150px;
+        top: 230px;
+      }
+    }
   }
 }
 
@@ -270,6 +351,49 @@ body {
   .text__part {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  // animation icons
+  .model {
+    &__image {
+      width: 73%;
+      right: -45px;
+      top: 85px;
+    }
+  }
+
+  .fruits-container {
+    &__fruit {
+      &--orange {
+        width: 55px;
+        top: 230px;
+        left: 75px;
+      }
+  
+      &--lemon {
+        width: 45px;
+        left: 105px;
+        top: 140px;
+      }
+  
+      &--pill-1 {
+        width: 30px;
+        right: -1px;
+        bottom: 170px;
+      }
+
+      &--pill-2--2 {
+        width: 95px;
+        right: -55px;
+        top: 75px;
+      }
+  
+      &--pill-2 {
+        width: 45px;
+        left: 150px;
+        top: 230px;
+      }
+    }
   }
 }
 
