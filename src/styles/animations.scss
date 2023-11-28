@@ -1,8 +1,19 @@
 .text {
   font-family: $font-family-claim;
   color: $claim-color;
+  --delay: 40ms;
 
   &__part {
+    opacity: 0;
+    animation: fade 500ms ease;
+    animation-fill-mode: forwards;
+
+    @for $i from 1 through 50 {
+      &:nth-child(#{$i}) {
+        animation-delay: calc(var(--delay) * $i);
+      }
+    }
+
     &--emphasis {
       font-weight: bold;
       color: $claim-color-emp;
@@ -54,5 +65,17 @@
   }
   to {
     transform: translateY(20%);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
