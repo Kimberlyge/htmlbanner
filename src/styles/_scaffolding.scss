@@ -17,31 +17,6 @@ body {
   overflow: hidden;
 
   margin-bottom: 20px;
-
-  &-300-250 {
-    width: 300px;
-    height: 250px;
-  }
-
-  &-300-600 {
-    width: 300px;
-    height: 600px;
-  }
-
-  &-320-480 {
-    width: 320px;
-    height: 480px;
-  }
-
-  &-728-90 {
-    width: 728px;
-    height: 90px;
-  }
-
-  &-1080-1080 {
-    width: 1080px;
-    height: 1080px;
-  }
 }
 
 .banner-button {
@@ -79,17 +54,13 @@ body {
 }
 
 .image-container {
-  // max-width: 100%;
-  // overflow: hidden;
-  // position: absolute;
-  // top: 0;
+  position: absolute;
+  top: 0;
 }
 
 .animation-container {
-  display: flex;
-  width: 100%; /* Ensure the container takes full width */
-  position: absolute;
-  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .animation-container img {
