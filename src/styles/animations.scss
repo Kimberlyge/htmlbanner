@@ -24,6 +24,7 @@
     position: absolute;
     right: 0;
     top: 50%;
+    animation: bounce 1s infinite ease-in-out alternate;
 
     &--orange {
       width: 100px;
@@ -44,5 +45,14 @@
       width: 100px;
       height: auto;
     }
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(20%);
   }
 }
