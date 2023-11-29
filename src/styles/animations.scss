@@ -1,0 +1,190 @@
+.text {
+  font-family: $font-family-claim;
+  color: $claim-color;
+  --delay: 80ms;
+  --duration: 5s;
+
+  &__part {
+    display: inline-block;
+    opacity: 0;
+    animation: fade var(--duration) ease;
+    animation-fill-mode: forwards;
+
+    @for $i from 1 through 50 {
+      &:nth-child(#{$i}) {
+        animation-delay: calc(var(--delay) * $i);
+      }
+    }
+
+    &--emphasis {
+      font-weight: bold;
+      color: $claim-color-emp;
+    }
+
+    strong {
+      display: inline-block;
+      animation: pulse var(--duration) ease infinite;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+.model {
+  &__image {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: auto;
+  }
+}
+
+.fruits-container {
+  &__fruit {
+    position: absolute;
+    right: 0;
+    animation: bounce 1.5s infinite ease-in-out alternate;
+
+    &--orange {
+      width: 100px;
+      height: auto;
+    }
+
+    &--lemon {
+      width: 100px;
+      height: auto;
+    }
+
+    &--pill-1 {
+      width: 100px;
+      height: auto;
+      animation-delay: 0.2s;
+    }
+
+    &--pill-2 {
+      width: 100px;
+      height: auto;
+      animation-delay: 0.2s;
+    }
+
+    &--pill-2-2 {
+      width: 100px;
+      height: auto;
+      animation-delay: 0.2s;
+    }
+  }
+}
+
+.banner-button {
+  --delay: 80ms;
+  --duration: 3s;
+  --appear-duration: 1s;
+  --appear-delay: 2s;
+  transform: scale(0);
+  animation: buttonAppear var(--appear-duration) cubic-bezier(.85,-0.42,.26,1.6) var(--appear-delay),
+    pulseButton var(--duration) ease
+      calc(var(--appear-duration) + var(--appear-delay)) infinite;
+}
+
+@keyframes buttonAppear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-19%);
+  }
+  to {
+    transform: translateY(19%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  85% {
+    transform: scale(1.1);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.96);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+
+  60% {
+    transform: scale(0.98);
+  }
+
+  70% {
+    transform: scale(1.02);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

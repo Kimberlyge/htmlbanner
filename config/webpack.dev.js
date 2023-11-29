@@ -11,7 +11,12 @@ module.exports = merge(common, {
 
   // Spin up a server for quick development
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/index.html',
+      rewrites: [
+        { from: /^\/htmlbanner-300-600/, to: '/htmlbanner-300-600.html' },
+      ],
+    },
     open: true,
     compress: true,
     hot: true,
