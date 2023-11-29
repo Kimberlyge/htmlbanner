@@ -76,9 +76,23 @@
 
 .banner-button {
   --delay: 80ms;
-  --duration: 6s;
-  animation: pulseButton var(--duration) ease infinite;
-  animation-fill-mode: both;
+  --duration: 3s;
+  --appear-duration: 1s;
+  --appear-delay: 2s;
+  transform: scale(0);
+  animation: buttonAppear var(--appear-duration) cubic-bezier(.85,-0.42,.26,1.6) var(--appear-delay),
+    pulseButton var(--duration) ease
+      calc(var(--appear-duration) + var(--appear-delay)) infinite;
+}
+
+@keyframes buttonAppear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes bounce {
@@ -102,15 +116,15 @@
   25% {
     transform: scale(1.1);
   }
-  
+
   30% {
     transform: scale(1);
   }
-  
+
   80% {
     transform: scale(1);
   }
-  
+
   85% {
     transform: scale(1.1);
   }
@@ -126,46 +140,30 @@
 
 @keyframes pulseButton {
   0% {
-    transform: scale(0.2);
-  }
-
-  13% {
-    transform: scale(1.1);
-  }
-
-  16% {
     transform: scale(1);
-  }
-
-  28% {
-    transform: scale(1);
-  }
-  
-  30% {
-    transform: scale(0.9);
-  }
-
-  32% {
-    transform: scale(1.1);
   }
 
   35% {
     transform: scale(1);
   }
-  
+
+  40% {
+    transform: scale(0.96);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+
+  60% {
+    transform: scale(0.98);
+  }
+
+  70% {
+    transform: scale(1.02);
+  }
+
   80% {
-    transform: scale(1);
-  }
-
-  83% {
-    transform: scale(0.9);
-  }
-  
-  85% {
-    transform: scale(1.1);
-  }
-
-  90% {
     transform: scale(1);
   }
 
@@ -184,7 +182,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-  
+
   100% {
     opacity: 1;
     transform: translateY(0);
