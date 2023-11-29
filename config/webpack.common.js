@@ -42,6 +42,12 @@ module.exports = {
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
+
+    new HtmlWebpackPlugin({
+      title: 'html banner 300x250',
+      template: paths.src + '/htmlbanner-300-600.html', // template file
+      filename: 'htmlbanner-300-600.html', // output file
+    }),
   ],
 
   // Determine how modules within the project are treated
