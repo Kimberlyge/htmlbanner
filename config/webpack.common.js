@@ -51,7 +51,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'html banner 300x480',
       template: paths.src + '/htmlbanner-320-480.html', // template file
-      filename: 'htmlbanner-300-480.html', // output file
+      filename: 'htmlbanner-320-480.html', // output file
     }),
 
     new HtmlWebpackPlugin({

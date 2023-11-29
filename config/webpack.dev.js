@@ -15,7 +15,7 @@ module.exports = merge(common, {
       index: '/index.html',
       rewrites: [
         { from: /^\/htmlbanner-300-250/, to: '/htmlbanner-300-250.html' },
-        { from: /^\/htmlbanner-300-480/, to: '/htmlbanner-320-480.html' },
+        { from: /^\/htmlbanner-320-480/, to: '/htmlbanner-320-480.html' },
         { from: /^\/htmlbanner-300-600/, to: '/htmlbanner-300-600.html' },
         { from: /^\/htmlbanner-728-90/, to: '/htmlbanner-728-90.html' },
         { from: /^\/htmlbanner-970-90/, to: '/htmlbanner-970-90.html' },
