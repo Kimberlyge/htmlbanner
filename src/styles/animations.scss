@@ -3,14 +3,12 @@
   color: $claim-color;
   --delay: 80ms;
   --duration: 5s;
-  // animation: fadeOut var(--duration) ease infinite;
-  animation-fill-mode: both;
 
   &__part {
     display: inline-block;
     opacity: 0;
-    animation: fade var(--duration) ease infinite;
-    animation-fill-mode: both;
+    animation: fade var(--duration) ease;
+    animation-fill-mode: forwards;
 
     @for $i from 1 through 50 {
       &:nth-child(#{$i}) {
@@ -187,27 +185,8 @@
     transform: translateY(0);
   }
   
-  95% {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-20);
-  }
 }
-
-// @keyframes fadeOut {
-//   0% {
-//     opacity: 100%;
-//   }
-
-//   90% {
-//     opacity: 100%;
-//   }
-
-//   100% {
-//     opacity: 0;
-//   }
-// }
