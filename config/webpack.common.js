@@ -44,8 +44,38 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'html banner 300x250',
+      template: paths.src + '/htmlbanner-300-250.html', // template file
+      filename: 'htmlbanner-300-250.html', // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'html banner 300x480',
+      template: paths.src + '/htmlbanner-320-480.html', // template file
+      filename: 'htmlbanner-300-480.html', // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'html banner 300x600',
       template: paths.src + '/htmlbanner-300-600.html', // template file
       filename: 'htmlbanner-300-600.html', // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'html banner 728-90',
+      template: paths.src + '/htmlbanner-728-90.html', // template file
+      filename: 'htmlbanner-728-90.html', // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'html banner 970-90',
+      template: paths.src + '/htmlbanner-970-90.html', // template file
+      filename: 'htmlbanner-970-90.html', // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'html banner 1080-1080',
+      template: paths.src + '/htmlbanner-1080-1080.html', // template file
+      filename: 'htmlbanner-1080-1080.html', // output file
     }),
   ],
 

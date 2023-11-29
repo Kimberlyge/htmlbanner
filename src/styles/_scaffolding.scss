@@ -38,26 +38,9 @@
   }
 }
 
-// .image-container {
-//   position: absolute;
-//   top: 0;
-// }
-
-// .animation-container {
-//   height: 100%;
-//   width: 100%;
-// }
-
-.image-container {
-  // max-width: 100%;
-  // overflow: hidden;
-  // position: absolute;
-  // top: 0;
-}
-
 .animation-container {
   display: flex;
-  width: 100%; /* Ensure the container takes full width */
+  width: 100%; 
   position: absolute;
   top: 0;
 }
